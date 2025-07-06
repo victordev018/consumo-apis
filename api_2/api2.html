@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração API NASA APOD</title>
+    <link rel="stylesheet" href="api2.css">
+</head>
+<body>
+
+    <section id="api-nasa-apod">
+        <h2>API: NASA - Imagem Astronômica do Dia (APOD)</h2>
+        <p>Esta API da NASA mostra uma foto ou vídeo diferente do espaço a cada dia, com uma explicação detalhada.</p>
+
+        <button id="fetch-apod-btn">Buscar Imagem do Dia</button>
+
+        <div id="apod-container" class="hidden">
+            <h3 id="apod-title"></h3>
+            <p id="apod-date"></p>
+            <div id="apod-media">
+                </div>
+            <p id="apod-explanation"></p>
+        </div>
+        <div id="loading-spinner" class="hidden"></div>
+    </section>
+
+    <script src="api2.js"></script>
+</body>
+</html>

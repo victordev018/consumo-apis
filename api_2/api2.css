@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#api-nasa-apod {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #0b3d91; /* Cor da NASA */
+}
+
+button {
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#apod-container img, #apod-container iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#apod-explanation {
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+#apod-title {
+    margin-top: 20px;
+    color: #1c1c1c;
+}
+
+/* Esconde elementos até que sejam necessários */
+.hidden {
+    display: none;
+}
+
+/* Animação simples de carregamento */
+#loading-spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #0b3d91;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
