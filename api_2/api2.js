@@ -2,8 +2,7 @@
 document.getElementById('fetch-apod-btn').addEventListener('click', getApodData);
 
 function getApodData() {
-    // Uma boa prática é instruir cada membro do time a colocar sua própria chave aqui.
-    const apiKey = '2ZxFFvPtcguE58DB4utnYeJysThaS1geLXPYxITQ';
+    const apiKey = 'CHAVE_API_AQUI';
 
     // Elementos da página
     const container = document.getElementById('apod-container');
@@ -35,7 +34,7 @@ function getApodData() {
             document.getElementById('apod-explanation').textContent = data.explanation;
 
             const mediaContainer = document.getElementById('apod-media');
-            mediaContainer.innerHTML = ''; // Limpa o conteúdo anterior
+            mediaContainer.innerHTML = ''; 
 
             if (data.media_type === 'image') {
                 const img = document.createElement('img');
