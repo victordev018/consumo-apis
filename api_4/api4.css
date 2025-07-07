@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1a1a1a, #2c003e);
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header.page-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header.page-title h1 {
+  font-size: 2rem;
+  color: #bb86fc; /* Roxo claro */
+}
+
+main {
+  width: 100%;
+  max-width: 500px;
+  background-color: #121212; /* Preto escuro */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.character {
+  margin: 20px 0;
+}
+
+.character img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(187, 134, 252, 0.5); /* Roxo */
+}
+
+.character p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #bb86fc; /* Roxo claro */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #6200ea; /* Roxo escuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #3700b3; /* Roxo mais escuro */
+}
