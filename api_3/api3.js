@@ -1,29 +1,28 @@
-function carregarFilmes() {
-    fetch('./api/tmdb') // Caminho relativo ao backend da pasta
-        .then(res => {
-            if (!res.ok) throw new Error("Erro na resposta da API");
-            return res.json();
+function carregarSeries() {
+    const url = "https://api.tvmaze.com/shows";
+
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            exibirSeries(data.slice(0, 24));
         })
-        .then(data => exibirFilmes(data.results))
-        .catch(err => console.error("Erro ao buscar filmes:", err));
+        .catch(err => console.error("Erro ao buscar séries:", err));
 }
 
-function exibirFilmes(filmes) {
+function exibirSeries(series) {
     const container = document.getElementById("personagens");
     container.innerHTML = "";
 
-    filmes.forEach(filme => {
+    series.forEach(show => {
+        const imagem = show.image ? show.image.medium : "https://via.placeholder.com/220x280?text=Sem+Imagem";
+
         const card = document.createElement("div");
         card.className = "card";
 
-        const imagem = filme.poster_path
-            ? `https://image.tmdb.org/t/p/w500${filme.poster_path}`
-            : "https://via.placeholder.com/220x280?text=Sem+Imagem";
-
         card.innerHTML = `
-            <img src="${imagem}" alt="${filme.title}">
-            <h3>${filme.title}</h3>
-            <p>${filme.overview ? filme.overview.slice(0, 120) + '...' : 'Sem sinopse disponível.'}</p>
+            <img src="${imagem}" alt="${show.name}">
+            <h3>${show.name}</h3>
+            <p>${show.summary ? show.summary.replace(/<[^>]+>/g, '').slice(0, 120) + '...' : 'Sem descrição disponível.'}</p>
         `;
 
         container.appendChild(card);
