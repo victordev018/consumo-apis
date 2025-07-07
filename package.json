@@ -1,0 +1,25 @@
+{
+  "name": "consumindo_apis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victordev018/consumo-apis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victordev018/consumo-apis/issues"
+  },
+  "homepage": "https://github.com/victordev018/consumo-apis#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
