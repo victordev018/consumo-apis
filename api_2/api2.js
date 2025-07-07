@@ -2,7 +2,7 @@
 document.getElementById('fetch-apod-btn').addEventListener('click', getApodData);
 
 function getApodData() {
-    const apiKey = 'CHAVE_API_AQUI';
+    const apiKey = NASA_API_KEY;
 
     // Elementos da página
     const container = document.getElementById('apod-container');

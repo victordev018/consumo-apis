@@ -1,0 +1,1 @@
+const NASA_API_KEY = '2ZxFFvPtcguE58DB4utnYeJysThaS1geLXPYxITQ';
