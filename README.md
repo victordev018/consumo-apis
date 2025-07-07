@@ -9,7 +9,7 @@ Este repositório contém uma demonstração do consumo de quatro APIs públicas
 **Autenticação:** Não requer.  
 **Exemplo cURL:**  
 ```bash
-curl https://rickandmortyapi.com/api/character
+curl "https://rickandmortyapi.com/api/character"
 ```
 
 ### 2. NASA Astronomy Picture of the Day (APOD) API
@@ -25,13 +25,20 @@ curl "https://api.nasa.gov/planetary/apod?api_key=YOUR_API_KEY"
 **Autenticação:** Não requer. <br>
 **Exemplo cURL:**
 ```bash
-curl https://api.tvmaze.com/shows
+curl "https://api.tvmaze.com/shows"
 ```
 
-## 4. Jikan API (Anime)
+### 4. Jikan API (Anime)
 **Descrição:** API não oficial para dados do site MyAnimeList, fornecendo informações sobre animes e seus personagens. <br>
 **Autenticação:** Não requer. <br>
 **Exemplo cURL:**
 ```bash
-curl https://api.jikan.moe/v4/anime/1/characters
+curl "https://api.jikan.moe/v4/anime/1/characters"
 ```
+
+## Equipe
+
+- [Kaio Gabriel](https://github.com/KaioGabriel-the)
+- [Enzo Melo](https://github.com/EnzoMello)
+- [João Victor](https://github.com/victordev018/)
+- [Sammya Leticia](https://github.com/samleticias)
